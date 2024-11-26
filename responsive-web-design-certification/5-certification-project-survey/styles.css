@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+  color: #000000;
+  font-family: Sans-Serif;
+  font-size: 16px;
+}
+
+img {
+  width: 50%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  padding-bottom: 2em;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 10px 0;
+  min-height: 2em;
+  background-color: white;
+  border: 1px solid black;
+}
+
+a, p {
+  color: #53a318;
+  font-weight: bold;
+}
+
+div {
+  background-color: #edeff1;
+  padding: 10px;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea, select{
+  margin: 10px 0 10px 0;
+  min-height: 2em;
+  background-color: white;
+  border: 1px solid black;
+  width: 100%; 
+}

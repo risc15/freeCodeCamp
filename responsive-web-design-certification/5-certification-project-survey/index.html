@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Survey</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="inline">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Groupon_Logo.svg" alt="Groupon logo"/>
+		<h1 id="title">The "Official" Survey</h1>
+		<p id="description">We just need a minute or two of your time!</p>
+		<form id="survey-form">
+			<div id="first">
+				<label id="name-label" for="name">Name:</label>
+				<input id="name" type="text" placeholder="First and last name" required />
+				<label id="email-label" for="email">E-Mail:</label>
+				<input id="email" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="example@mail.com" required />
+				<label id="number-label" for="number">Age:</label>
+				<input id="number" type="number" min="18" max="150" placeholder="18" required />
+			</div>
+			<div id="second">
+				<label for="dropdown">How often do you use Groupon?</label>
+				<select id="dropdown">
+					<option value="">(select one)</option>
+					<option value="1">I use it all the time!</option>
+					<option value="2">I sometimes use it.</option>
+					<option value="3">I rarely use it.</option>
+					<option value="4">I hate groupon.</option>
+					<option value="5">I'm part of the Kidz Club.</option>
+				</select>
+			</div>
+			<div id="third">
+				<p>Would you recommend your friends and family to join Groupon?</p>
+				<label for="radio-1"><input id="radio-1" type="radio" name="radios" value="radio1" /> Yes</label>
+				<label for="radio-2"><input id="radio-2" type="radio" name="radios" value="radio2" /> No</label>
+				<label for="radio-3"><input id="radio-3" type="radio" name="radios" value="radio3" /> They already are!</label>
+				<label for="radio-4"><input id="radio-4" type="radio" name="radios" value="radio4" /> I hate groupon.</label>
+				<label for="radio-5"><input id="radio-5" type="radio" name="radios" value="radio5" /> I am a child and I love the Groupon Kidz Club.</label>
+			</div>
+			<div id="fourth">
+				<p>What category of Groupons do you usually use? (Check all that apply)</p>
+				<label for="selection1"><input name="selection" id="selection1" value="selection1" type="checkbox" /> Beauty & Spas</label>
+				<label for="selection2"><input name="selection" id="selection2" value="selection2" type="checkbox" /> Things To Do</label>
+				<label for="selection3"><input name="selection" id="selection3" value="selection3" type="checkbox" /> Gifts</label>
+				<label for="selection4"><input name="selection" id="selection4" value="selection4" type="checkbox" /> Auto & Home</label>
+				<label for="selection5"><input name="selection" id="selection5" value="selection5" type="checkbox" /> Food & Drink</label>
+				<label for="selection6"><input name="selection" id="selection6" value="selection6" type="checkbox" /> Travel</label>
+				<label for="selection7"><input name="selection" id="selection7" value="selection7" type="checkbox" /> Goods</label>
+				<label for="selection8"><input name="selection" id="selection8" value="selection8" type="checkbox" /> Coupons</label>
+			</div>
+			<div id="fifth">
+				<p>Anything else we should know?</p>
+				<label>
+				<textarea placeholder="Enter your comment here..."></textarea>
+				</label>
+			</div>
+			<div id="sixth">
+				<button type="submit" id="submit">Submit</button>
+			</div>
+		</form>
+	</body>
+</html>
